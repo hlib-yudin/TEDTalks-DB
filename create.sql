@@ -35,6 +35,7 @@ CREATE TABLE Rating (
 CREATE TABLE TEDTalk(
     speech_name VARCHAR(120) NOT NULL PRIMARY KEY,
     description VARCHAR(255) NOT NULL,
+    duration_sec INT NOT NULL CHECK (duration_sec > 0),
     event VARCHAR(30) NOT NULL REFERENCES TEDEvent(event),
     film_date TIMESTAMP NOT NULL,
     url VARCHAR(255) NOT NULL REFERENCES Video(url)
