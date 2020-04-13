@@ -21,7 +21,7 @@ CREATE TABLE Video (
 
 --сутність Rating
 CREATE TABLE Rating (
-    rating VARCHAR(20) NOT NULL PRIMARY KEY
+    rating_name VARCHAR(20) NOT NULL PRIMARY KEY
     );
        
 
@@ -49,7 +49,7 @@ CREATE TABLE SpeechPerson (
 --сутність SpeechRating -- виступ та його різні рейтинги
 CREATE TABLE SpeechRating (
     speech_name VARCHAR(120) NOT NULL REFERENCES TEDTalk(speech_name),
-    rating VARCHAR(20) NOT NULL REFERENCES Rating(rating),
+    rating_name VARCHAR(20) NOT NULL REFERENCES Rating(rating_name),
     rating_value INT DEFAULT 0 CHECK(rating_value >= 0),
-    CONSTRAINT PK_speechrating PRIMARY KEY (speech_name, rating)
+    CONSTRAINT PK_speechrating PRIMARY KEY (speech_name, rating_name)
     );
