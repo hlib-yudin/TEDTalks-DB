@@ -1,16 +1,10 @@
 --сутність Person
+--ключем є ім'я людини, бо за даними датасету неможливо розрізнити, чи це дві людини з однаковим іменем,
+--чи це одна й та сама людина повторюється двічі. Вважатимемо, що імена унікальні.
 CREATE TABLE Person (
-    person_id INT NOT NULL PRIMARY KEY,
-    person_name VARCHAR(50) NOT NULL
+    person_name VARCHAR(50) NOT NULL PRIMARY KEY
 );
 
---лічильник для person_id
-CREATE SEQUENCE person_seq
-    START WITH 1
-    INCREMENT BY 1
-    NOMAXVALUE;
---person_seq.nextval
-    
 
 --сутність TEDEvent
 CREATE TABLE TEDEvent (
@@ -31,7 +25,9 @@ CREATE TABLE Rating (
     );
        
 
---сутність TEDTalk -- сам виступ    
+--сутність TEDTalk -- сам виступ
+--назва виступу складається з імені людини та назви доповіді; одна й та сама людина не буде двічі розповідати одну й 
+--ту саму доповідь. Отже, назву виступу можна вважати ключем.
 CREATE TABLE TEDTalk(
     speech_name VARCHAR(120) NOT NULL PRIMARY KEY,
     description VARCHAR(255) NOT NULL,
