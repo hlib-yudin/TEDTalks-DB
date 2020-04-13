@@ -30,7 +30,7 @@ CREATE TABLE Rating (
 --ту саму доповідь. Отже, назву виступу можна вважати ключем.
 CREATE TABLE TEDTalk(
     speech_name VARCHAR(120) NOT NULL PRIMARY KEY,
-    description VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
     duration_sec INT NOT NULL CHECK (duration_sec > 0),
     event VARCHAR(30) NOT NULL REFERENCES TEDEvent(event),
     film_date TIMESTAMP NOT NULL,
