@@ -40,9 +40,9 @@ CREATE TABLE TEDTalk(
     
 --сутність SpeechPerson -- людина та TEDTalk, який вона розповідає
 CREATE TABLE SpeechPerson (
-    person_id INT NOT NULL REFERENCES Person(person_id),
+    person_name VARCHAR(50) NOT NULL REFERENCES Person(person_name),
     speech_name VARCHAR(120) NOT NULL REFERENCES TEDTalk(speech_name),
-    CONSTRAINT PK_speechperson PRIMARY KEY (person_id, speech_name)
+    CONSTRAINT PK_speechperson PRIMARY KEY (person_name, speech_name)
     );
     
 
