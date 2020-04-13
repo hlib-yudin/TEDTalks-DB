@@ -8,7 +8,7 @@ CREATE TABLE Person (
 
 --сутність TEDEvent
 CREATE TABLE TEDEvent (
-    event VARCHAR(30) NOT NULL PRIMARY KEY
+    event VARCHAR(70) NOT NULL PRIMARY KEY
     );
     
     
@@ -30,9 +30,9 @@ CREATE TABLE Rating (
 --ту саму доповідь. Отже, назву виступу можна вважати ключем.
 CREATE TABLE TEDTalk(
     speech_name VARCHAR(120) NOT NULL PRIMARY KEY,
-    description VARCHAR(500) NOT NULL,
+    description VARCHAR(1000) NOT NULL,
     duration_sec INT NOT NULL CHECK (duration_sec > 0),
-    event VARCHAR(30) NOT NULL REFERENCES TEDEvent(event),
+    event VARCHAR(70) NOT NULL REFERENCES TEDEvent(event),
     film_date TIMESTAMP NOT NULL,
     url VARCHAR(255) NOT NULL REFERENCES Video(url)
     );
