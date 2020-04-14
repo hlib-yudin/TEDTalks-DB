@@ -86,7 +86,7 @@ FROM
 --крок 2: групуємо за роками
 SELECT
     years.year,
-    SUM(Video.views)
+    SUM(Video.views) AS total_views
 FROM 
     TEDTalk JOIN (
     
