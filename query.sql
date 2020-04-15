@@ -37,10 +37,10 @@ WHERE ROWNUM <= 10;
 
 --крок 3 -- LEFT JOIN з рейтингами
 SELECT 
-    Rating.rating_name,
-    --NVL(temp2.speech_count, 0) AS speech_count
+    Rating.rating_name
+    ,NVL(temp2.speech_count, 0) AS speech_count
     --якщо необхідно порахувати у відсотках
-    NVL(ROUND(temp2.speech_count / temp3.total_speeches * 100, 2), 0) AS percentage
+    ,NVL(ROUND(temp2.speech_count / temp3.total_speeches * 100, 2), 0) AS percentage
 FROM 
     Rating LEFT JOIN (
             
