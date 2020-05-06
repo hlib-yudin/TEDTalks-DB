@@ -1,5 +1,1096 @@
 SET DEFINE OFF;
 BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/wadah_khanfar_a_historic_moment_in_the_arab_world', 922923);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'As a democratic revolution led by tech-empowered young people sweeps the Arab world, Wadah Khanfar, the head of Al Jazeera, shares a profoundly optimistic view of what''s happening in Egypt, Tunisia, Libya and beyond -- at this powerful moment when people realized they could step out of their houses and ask for change.', 1032, 'TED2011', TIMESTAMP '2011-03-02 02:00:00', 'https://www.ted.com/talks/wadah_khanfar_a_historic_moment_in_the_arab_world');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('Wadah Khanfar');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('Wadah Khanfar', 'Wadah Khanfar: A historic moment in the Arab world');
+END;
+/
+BEGIN
+    BEGIN
+        INSERT INTO Rating (rating_name) VALUES ('Fascinating');
+    END;
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'Fascinating', 128);
+
+    BEGIN
+        INSERT INTO Rating (rating_name) VALUES ('Inspiring');
+    END;
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'Inspiring', 666);
+
+    BEGIN
+        INSERT INTO Rating (rating_name) VALUES ('Beautiful');
+    END;
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'Beautiful', 128);
+
+    BEGIN
+        INSERT INTO Rating (rating_name) VALUES ('Courageous');
+    END;
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'Courageous', 227);
+
+    BEGIN
+        INSERT INTO Rating (rating_name) VALUES ('Informative');
+    END;
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'Informative', 217);
+
+    BEGIN
+        INSERT INTO Rating (rating_name) VALUES ('Persuasive');
+    END;
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'Persuasive', 194);
+
+    BEGIN
+        INSERT INTO Rating (rating_name) VALUES ('Ingenious');
+    END;
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'Ingenious', 31);
+
+    BEGIN
+        INSERT INTO Rating (rating_name) VALUES ('Jaw-dropping');
+    END;
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'Jaw-dropping', 78);
+
+    BEGIN
+        INSERT INTO Rating (rating_name) VALUES ('Unconvincing');
+    END;
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'Unconvincing', 24);
+
+    BEGIN
+        INSERT INTO Rating (rating_name) VALUES ('OK');
+    END;
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'OK', 42);
+
+    BEGIN
+        INSERT INTO Rating (rating_name) VALUES ('Obnoxious');
+    END;
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'Obnoxious', 16);
+
+    BEGIN
+        INSERT INTO Rating (rating_name) VALUES ('Confusing');
+    END;
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'Confusing', 9);
+
+    BEGIN
+        INSERT INTO Rating (rating_name) VALUES ('Longwinded');
+    END;
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'Longwinded', 19);
+
+    BEGIN
+        INSERT INTO Rating (rating_name) VALUES ('Funny');
+    END;
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wadah Khanfar: A historic moment in the Arab world', 'Funny', 4);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/jr_s_ted_prize_wish_use_art_to_turn_the_world_inside_out', 2626483);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'French street artist JR uses his camera to show the world its true face, by pasting photos of the human face across massive canvases. At TED2011, he makes his audacious TED Prize wish: to use art to turn the world inside out.', 1449, 'TED2011', TIMESTAMP '2011-03-02 02:00:00', 'https://www.ted.com/talks/jr_s_ted_prize_wish_use_art_to_turn_the_world_inside_out');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('JR');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('JR', 'JR: My wish: Use art to turn the world inside out');
+END;
+/
+BEGIN
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'Jaw-dropping', 386);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'Courageous', 523);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'Ingenious', 402);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'Inspiring', 1335);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'Beautiful', 555);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'Fascinating', 433);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'Persuasive', 191);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'Longwinded', 19);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'Obnoxious', 28);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'Unconvincing', 27);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'Funny', 87);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'Informative', 62);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'OK', 50);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('JR: My wish: Use art to turn the world inside out', 'Confusing', 16);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/wael_ghonim_inside_the_egyptian_revolution', 914212);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'Wael Ghonim is the Google executive who helped jumpstart Egypt''s democratic revolution ... with a Facebook page memorializing a victim of the regime''s violence. Speaking at TEDxCairo, he tells the inside story of the past two months, when everyday Egyptians showed that "the power of the people is stronger than the people in power."', 591, 'TED2011', TIMESTAMP '2011-03-04 02:00:00', 'https://www.ted.com/talks/wael_ghonim_inside_the_egyptian_revolution');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('Wael Ghonim');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('Wael Ghonim', 'Wael Ghonim: Inside the Egyptian revolution');
+END;
+/
+BEGIN
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'Courageous', 327);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'Inspiring', 677);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'Beautiful', 105);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'Fascinating', 125);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'Jaw-dropping', 41);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'Informative', 118);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'Persuasive', 107);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'OK', 67);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'Ingenious', 20);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'Unconvincing', 19);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'Longwinded', 13);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'Obnoxious', 14);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'Confusing', 7);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Wael Ghonim: Inside the Egyptian revolution', 'Funny', 8);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/bill_gates_how_state_budgets_are_breaking_us_schools', 1866264);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'America''s school systems are funded by the 50 states. In this fiery talk, Bill Gates says that state budgets are riddled with accounting tricks that disguise the true cost of health care and pensions and weighted with worsening deficits -- with the financing of education at the losing end.', 616, 'TED2011', TIMESTAMP '2011-03-03 02:00:00', 'https://www.ted.com/talks/bill_gates_how_state_budgets_are_breaking_us_schools');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('Bill Gates');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('Bill Gates', 'Bill Gates: How state budgets are breaking US schools');
+END;
+/
+BEGIN
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'Informative', 690);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'Persuasive', 385);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'Confusing', 61);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'OK', 207);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'Inspiring', 124);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'Ingenious', 28);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'Courageous', 125);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'Fascinating', 64);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'Longwinded', 53);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'Unconvincing', 108);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'Obnoxious', 31);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'Jaw-dropping', 69);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'Funny', 9);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Bill Gates: How state budgets are breaking US schools', 'Beautiful', 15);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/anthony_atala_printing_a_human_kidney', 2783715);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('Anthony Atala: Printing a human kidney', 'Surgeon Anthony Atala demonstrates an early-stage experiment that could someday solve the organ-donor problem: a 3D printer that uses living cells to output a transplantable kidney. Using similar technology, Dr. Atala''s young patient Luke Massella received an engineered bladder 10 years ago; we meet him onstage. NOTE: This talk was given in 2011, and this field of science has developed quickly since then. Read "Criticisms & updates" below for more details.', 1044, 'TED2011', TIMESTAMP '2011-03-03 02:00:00', 'https://www.ted.com/talks/anthony_atala_printing_a_human_kidney');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('Anthony Atala');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('Anthony Atala', 'Anthony Atala: Printing a human kidney');
+END;
+/
+BEGIN
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Anthony Atala: Printing a human kidney', 'Informative', 396);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Anthony Atala: Printing a human kidney', 'Inspiring', 544);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Anthony Atala: Printing a human kidney', 'Courageous', 111);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Anthony Atala: Printing a human kidney', 'Jaw-dropping', 873);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Anthony Atala: Printing a human kidney', 'Fascinating', 635);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Anthony Atala: Printing a human kidney', 'Ingenious', 457);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Anthony Atala: Printing a human kidney', 'Persuasive', 49);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Anthony Atala: Printing a human kidney', 'Beautiful', 91);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Anthony Atala: Printing a human kidney', 'OK', 38);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Anthony Atala: Printing a human kidney', 'Confusing', 10);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Anthony Atala: Printing a human kidney', 'Longwinded', 9);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Anthony Atala: Printing a human kidney', 'Funny', 6);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Anthony Atala: Printing a human kidney', 'Obnoxious', 17);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Anthony Atala: Printing a human kidney', 'Unconvincing', 14);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/salman_khan_let_s_use_video_to_reinvent_education', 4609857);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'Salman Khan talks about how and why he created the remarkable Khan Academy, a carefully structured series of educational videos offering complete curricula in math and, now, other subjects. He shows the power of interactive exercises, and calls for teachers to consider flipping the traditional classroom script -- give students video lectures to watch at home, and do "homework" in the classroom with the teacher available to help.', 1227, 'TED2011', TIMESTAMP '2011-03-02 02:00:00', 'https://www.ted.com/talks/salman_khan_let_s_use_video_to_reinvent_education');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('Sal Khan');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('Sal Khan', 'Sal Khan: Let''s use video to reinvent education');
+END;
+/
+BEGIN
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'Ingenious', 1971);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'Fascinating', 1258);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'Inspiring', 2681);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'Persuasive', 918);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'Informative', 787);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'Jaw-dropping', 989);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'Funny', 258);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'OK', 172);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'Courageous', 258);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'Beautiful', 243);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'Unconvincing', 45);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'Confusing', 29);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'Obnoxious', 53);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sal Khan: Let''s use video to reinvent education', 'Longwinded', 42);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/deb_roy_the_birth_of_a_word', 2475423);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('Deb Roy: The birth of a word', 'MIT researcher Deb Roy wanted to understand how his infant son learned language -- so he wired up his house with videocameras to catch every moment (with exceptions) of his son''s life, then parsed 90,000 hours of home video to watch "gaaaa" slowly turn into "water." Astonishing, data-rich research with deep implications for how we learn.', 1192, 'TED2011', TIMESTAMP '2011-03-04 02:00:00', 'https://www.ted.com/talks/deb_roy_the_birth_of_a_word');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('Deb Roy');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('Deb Roy', 'Deb Roy: The birth of a word');
+END;
+/
+BEGIN
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Deb Roy: The birth of a word', 'Jaw-dropping', 970);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Deb Roy: The birth of a word', 'Persuasive', 85);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Deb Roy: The birth of a word', 'Ingenious', 832);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Deb Roy: The birth of a word', 'Inspiring', 588);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Deb Roy: The birth of a word', 'Informative', 583);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Deb Roy: The birth of a word', 'Beautiful', 391);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Deb Roy: The birth of a word', 'Fascinating', 1330);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Deb Roy: The birth of a word', 'OK', 110);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Deb Roy: The birth of a word', 'Courageous', 49);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Deb Roy: The birth of a word', 'Funny', 31);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Deb Roy: The birth of a word', 'Longwinded', 96);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Deb Roy: The birth of a word', 'Unconvincing', 83);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Deb Roy: The birth of a word', 'Obnoxious', 29);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Deb Roy: The birth of a word', 'Confusing', 68);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/david_brooks_the_social_animal', 1132752);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('David Brooks: The social animal', 'Columnist David Brooks unpacks new insights into human nature from the cognitive sciences -- insights with massive implications for economics and politics as well as our own self-knowledge. In a talk full of humor, he shows how you can''t hope to understand humans as separate individuals making choices based on their conscious awareness.', 1124, 'TED2011', TIMESTAMP '2011-03-01 02:00:00', 'https://www.ted.com/talks/david_brooks_the_social_animal');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('David Brooks');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('David Brooks', 'David Brooks: The social animal');
+END;
+/
+BEGIN
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('David Brooks: The social animal', 'Persuasive', 347);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('David Brooks: The social animal', 'Informative', 417);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('David Brooks: The social animal', 'Funny', 390);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('David Brooks: The social animal', 'Fascinating', 427);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('David Brooks: The social animal', 'Obnoxious', 36);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('David Brooks: The social animal', 'OK', 98);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('David Brooks: The social animal', 'Unconvincing', 83);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('David Brooks: The social animal', 'Longwinded', 70);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('David Brooks: The social animal', 'Inspiring', 708);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('David Brooks: The social animal', 'Beautiful', 209);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('David Brooks: The social animal', 'Jaw-dropping', 93);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('David Brooks: The social animal', 'Ingenious', 124);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('David Brooks: The social animal', 'Confusing', 28);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('David Brooks: The social animal', 'Courageous', 93);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/janna_levin_the_sound_the_universe_makes', 1119772);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('Janna Levin: The sound the universe makes', 'We think of space as a silent place. But physicist Janna Levin says the universe has a soundtrack -- a sonic composition that records some of the most dramatic events in outer space. (Black holes, for instance, bang on spacetime like a drum.) An accessible and mind-expanding soundwalk through the universe.', 1063, 'TED2011', TIMESTAMP '2011-03-01 02:00:00', 'https://www.ted.com/talks/janna_levin_the_sound_the_universe_makes');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('Janna Levin');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('Janna Levin', 'Janna Levin: The sound the universe makes');
+END;
+/
+BEGIN
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Janna Levin: The sound the universe makes', 'Beautiful', 183);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Janna Levin: The sound the universe makes', 'Fascinating', 525);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Janna Levin: The sound the universe makes', 'Informative', 343);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Janna Levin: The sound the universe makes', 'OK', 110);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Janna Levin: The sound the universe makes', 'Inspiring', 199);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Janna Levin: The sound the universe makes', 'Confusing', 31);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Janna Levin: The sound the universe makes', 'Persuasive', 74);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Janna Levin: The sound the universe makes', 'Funny', 43);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Janna Levin: The sound the universe makes', 'Unconvincing', 66);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Janna Levin: The sound the universe makes', 'Longwinded', 91);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Janna Levin: The sound the universe makes', 'Ingenious', 72);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Janna Levin: The sound the universe makes', 'Jaw-dropping', 90);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Janna Levin: The sound the universe makes', 'Obnoxious', 23);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Janna Levin: The sound the universe makes', 'Courageous', 28);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/mark_bezos_a_life_lesson_from_a_volunteer_firefighter', 2178952);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'Volunteer firefighter Mark Bezos tells a story of an act of heroism that didn''t go quite as expected -- but that taught him a big lesson: Don''t wait to be a hero.', 247, 'TED2011', TIMESTAMP '2011-03-02 02:00:00', 'https://www.ted.com/talks/mark_bezos_a_life_lesson_from_a_volunteer_firefighter');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('Mark Bezos');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('Mark Bezos', 'Mark Bezos: A life lesson from a volunteer firefighter');
+END;
+/
+BEGIN
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'Inspiring', 2079);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'Funny', 1003);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'Courageous', 336);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'OK', 85);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'Persuasive', 370);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'Jaw-dropping', 58);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'Beautiful', 381);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'Ingenious', 76);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'Fascinating', 95);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'Informative', 43);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'Obnoxious', 16);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'Unconvincing', 8);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'Longwinded', 10);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Mark Bezos: A life lesson from a volunteer firefighter', 'Confusing', 10);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/sarah_kay_if_i_should_have_a_daughter', 10529854);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('Sarah Kay: If I should have a daughter ...', '"If I should have a daughter, instead of Mom, she''s gonna call me Point B ... " began spoken word poet Sarah Kay, in a talk that inspired two standing ovations at TED2011. She tells the story of her metamorphosis -- from a wide-eyed teenager soaking in verse at New York''s Bowery Poetry Club to a teacher connecting kids with the power of self-expression through Project V.O.I.C.E. -- and gives two breathtaking performances of "B" and "Hiroshima."', 1105, 'TED2011', TIMESTAMP '2011-03-03 02:00:00', 'https://www.ted.com/talks/sarah_kay_if_i_should_have_a_daughter');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('Sarah Kay');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('Sarah Kay', 'Sarah Kay: If I should have a daughter ...');
+END;
+/
+BEGIN
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sarah Kay: If I should have a daughter ...', 'Jaw-dropping', 1567);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sarah Kay: If I should have a daughter ...', 'Inspiring', 4986);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sarah Kay: If I should have a daughter ...', 'Beautiful', 4430);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sarah Kay: If I should have a daughter ...', 'Fascinating', 1220);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sarah Kay: If I should have a daughter ...', 'Ingenious', 498);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sarah Kay: If I should have a daughter ...', 'Longwinded', 116);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sarah Kay: If I should have a daughter ...', 'Unconvincing', 76);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sarah Kay: If I should have a daughter ...', 'Confusing', 77);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sarah Kay: If I should have a daughter ...', 'Courageous', 1266);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sarah Kay: If I should have a daughter ...', 'Persuasive', 348);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sarah Kay: If I should have a daughter ...', 'Funny', 612);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sarah Kay: If I should have a daughter ...', 'Obnoxious', 107);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sarah Kay: If I should have a daughter ...', 'Informative', 118);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Sarah Kay: If I should have a daughter ...', 'OK', 174);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/isabel_behncke_evolution_s_gift_of_play_from_bonobo_apes_to_humans', 710619);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'With never-before-seen video, primatologist Isabel Behncke Izquierdo (a TED Fellow) shows how bonobo ape society learns from constantly playing -- solo, with friends, even as a prelude to sex. Indeed, play appears to be the bonobos'' key to problem-solving and avoiding conflict. If it works for our close cousins, why not for us?', 421, 'TED2011', TIMESTAMP '2011-03-02 02:00:00', 'https://www.ted.com/talks/isabel_behncke_evolution_s_gift_of_play_from_bonobo_apes_to_humans');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('Isabel Behncke');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('Isabel Behncke', 'Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans');
+END;
+/
+BEGIN
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'Fascinating', 199);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'Unconvincing', 117);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'Funny', 279);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'Inspiring', 203);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'Informative', 253);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'OK', 157);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'Beautiful', 145);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'Courageous', 44);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'Persuasive', 84);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'Jaw-dropping', 22);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'Ingenious', 41);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'Obnoxious', 51);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'Confusing', 20);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Isabel Behncke: Evolution''s gift of play, from bonobo apes to humans', 'Longwinded', 34);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/eythor_bender_demos_human_exoskeletons', 1370710);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'Eythor Bender of Berkeley Bionics brings onstage two amazing exoskeletons, HULC and eLEGS -- robotic add-ons that could one day allow a human to carry 200 pounds without tiring, or allow a wheelchair user to stand and walk. It''s a powerful onstage demo, with implications for human potential of all kinds.', 383, 'TED2011', TIMESTAMP '2011-03-02 02:00:00', 'https://www.ted.com/talks/eythor_bender_demos_human_exoskeletons');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('Eythor Bender');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('Eythor Bender', 'Eythor Bender: Human exoskeletons -- for war and healing');
+END;
+/
+BEGIN
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'Jaw-dropping', 278);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'Fascinating', 294);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'Inspiring', 508);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'Ingenious', 381);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'OK', 90);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'Informative', 163);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'Beautiful', 98);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'Courageous', 101);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'Unconvincing', 73);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'Longwinded', 15);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'Confusing', 15);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'Persuasive', 54);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'Obnoxious', 44);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Eythor Bender: Human exoskeletons -- for war and healing', 'Funny', 11);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/ralph_langner_cracking_stuxnet_a_21st_century_cyberweapon', 1349028);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'When first discovered in 2010, the Stuxnet computer worm posed a baffling puzzle. Beyond its sophistication loomed a more troubling mystery: its purpose. Ralph Langner and team helped crack the code that revealed this digital warhead''s final target. In a fascinating look inside cyber-forensics, he explains how -- and makes a bold (and, it turns out, correct) guess at its shocking origins.', 640, 'TED2011', TIMESTAMP '2011-03-03 02:00:00', 'https://www.ted.com/talks/ralph_langner_cracking_stuxnet_a_21st_century_cyberweapon');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('Ralph Langner');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('Ralph Langner', 'Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon');
+END;
+/
+BEGIN
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'Confusing', 53);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'Longwinded', 27);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'Informative', 505);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'Fascinating', 311);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'Jaw-dropping', 355);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'Ingenious', 145);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'Persuasive', 134);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'OK', 64);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'Unconvincing', 29);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'Courageous', 82);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'Obnoxious', 16);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'Inspiring', 30);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'Funny', 13);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Ralph Langner: Cracking Stuxnet, a 21st-century cyber weapon', 'Beautiful', 11);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
+    INSERT INTO TEDEvent (event) VALUES ('TED2011');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/handpring_puppet_co_the_genius_puppetry_behind_war_horse', 1530711);
+    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', '"Puppets always have to try to be alive," says Adrian Kohler of the Handspring Puppet Company, a gloriously ambitious troupe of human and wooden actors. Beginning with the tale of a hyena''s subtle paw, puppeteers Kohler and Basil Jones build to the story of their latest astonishment: the wonderfully life-like Joey, the War Horse, who trots (and gallops) convincingly onto the TED stage.', 1091, 'TED2011', TIMESTAMP '2011-03-01 02:00:00', 'https://www.ted.com/talks/handpring_puppet_co_the_genius_puppetry_behind_war_horse');
+END;
+/
+BEGIN
+    INSERT INTO Person (person_name) VALUES ('Handspring Puppet Co.');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN NULL;
+END;
+/
+BEGIN
+    INSERT INTO SpeechPerson (person_name, speech_name)
+        VALUES ('Handspring Puppet Co.', 'Handspring Puppet Co.: The genius puppetry behind War Horse');
+END;
+/
+BEGIN
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', 'Jaw-dropping', 342);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', 'OK', 53);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', 'Funny', 77);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', 'Ingenious', 417);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', 'Inspiring', 215);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', 'Fascinating', 337);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', 'Beautiful', 370);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', 'Longwinded', 29);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', 'Unconvincing', 13);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', 'Informative', 75);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', 'Courageous', 19);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', 'Obnoxious', 17);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', 'Persuasive', 21);
+
+    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
+        VALUES ('Handspring Puppet Co.: The genius puppetry behind War Horse', 'Confusing', 12);
+
+END;
+/
+-----------------------------------------------------------------------------
+BEGIN
     INSERT INTO TEDEvent (event) VALUES ('TED2014');
 EXCEPTION
     WHEN DUP_VAL_ON_INDEX THEN NULL;
@@ -23,100 +1114,44 @@ BEGIN
 END;
 /
 BEGIN
-    BEGIN
-        INSERT INTO Rating (rating_name) VALUES ('Courageous');
-    END;
-
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Edward Snowden: Here''s how we take back the Internet', 'Courageous', 1844);
-
-    BEGIN
-        INSERT INTO Rating (rating_name) VALUES ('Informative');
-    END;
 
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Edward Snowden: Here''s how we take back the Internet', 'Informative', 1361);
 
-    BEGIN
-        INSERT INTO Rating (rating_name) VALUES ('Inspiring');
-    END;
-
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Edward Snowden: Here''s how we take back the Internet', 'Inspiring', 1208);
-
-    BEGIN
-        INSERT INTO Rating (rating_name) VALUES ('Persuasive');
-    END;
 
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Edward Snowden: Here''s how we take back the Internet', 'Persuasive', 446);
 
-    BEGIN
-        INSERT INTO Rating (rating_name) VALUES ('Jaw-dropping');
-    END;
-
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Edward Snowden: Here''s how we take back the Internet', 'Jaw-dropping', 199);
-
-    BEGIN
-        INSERT INTO Rating (rating_name) VALUES ('Fascinating');
-    END;
 
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Edward Snowden: Here''s how we take back the Internet', 'Fascinating', 285);
 
-    BEGIN
-        INSERT INTO Rating (rating_name) VALUES ('Beautiful');
-    END;
-
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Edward Snowden: Here''s how we take back the Internet', 'Beautiful', 80);
-
-    BEGIN
-        INSERT INTO Rating (rating_name) VALUES ('Funny');
-    END;
 
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Edward Snowden: Here''s how we take back the Internet', 'Funny', 33);
 
-    BEGIN
-        INSERT INTO Rating (rating_name) VALUES ('Longwinded');
-    END;
-
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Edward Snowden: Here''s how we take back the Internet', 'Longwinded', 30);
-
-    BEGIN
-        INSERT INTO Rating (rating_name) VALUES ('OK');
-    END;
 
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Edward Snowden: Here''s how we take back the Internet', 'OK', 65);
 
-    BEGIN
-        INSERT INTO Rating (rating_name) VALUES ('Ingenious');
-    END;
-
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Edward Snowden: Here''s how we take back the Internet', 'Ingenious', 75);
-
-    BEGIN
-        INSERT INTO Rating (rating_name) VALUES ('Obnoxious');
-    END;
 
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Edward Snowden: Here''s how we take back the Internet', 'Obnoxious', 31);
 
-    BEGIN
-        INSERT INTO Rating (rating_name) VALUES ('Confusing');
-    END;
-
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Edward Snowden: Here''s how we take back the Internet', 'Confusing', 21);
-
-    BEGIN
-        INSERT INTO Rating (rating_name) VALUES ('Unconvincing');
-    END;
 
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Edward Snowden: Here''s how we take back the Internet', 'Unconvincing', 59);
@@ -1028,1052 +2063,6 @@ BEGIN
 
     INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
         VALUES ('Lawrence Lessig: The unstoppable walk to political reform', 'Funny', 6);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/amanda_burden_how_public_spaces_make_cities_work', 1061964);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'More than 8 million people are crowded together to live in New York City. What makes it possible? In part, it’s the city’s great public spaces — from tiny pocket parks to long waterfront promenades — where people can stroll and play. Amanda Burden helped plan some of the city’s newest public spaces, drawing on her experience as, surprisingly, an animal behaviorist. She shares the unexpected challenges of planning parks people love -- and why it''s important.', 1108, 'TED2014', TIMESTAMP '2014-03-20 02:00:00', 'https://www.ted.com/talks/amanda_burden_how_public_spaces_make_cities_work');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('Amanda Burden');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('Amanda Burden', 'Amanda Burden: How public spaces make cities work');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'OK', 130);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'Funny', 19);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'Beautiful', 275);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'Informative', 372);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'Inspiring', 750);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'Fascinating', 243);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'Longwinded', 31);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'Courageous', 113);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'Ingenious', 57);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'Persuasive', 151);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'Obnoxious', 18);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'Jaw-dropping', 5);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'Unconvincing', 5);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Amanda Burden: How public spaces make cities work', 'Confusing', 10);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/louie_schwartzberg_hidden_miracles_of_the_natural_world', 7015800);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'We live in a world of unseeable beauty, so subtle and delicate that it is imperceptible to the human eye. To bring this invisible world to light, filmmaker Louie Schwartzberg bends the boundaries of time and space with high-speed cameras, time lapses and microscopes. At TED2014, he shares highlights from his latest project, a 3D film titled "Mysteries of the Unseen World," which slows down, speeds up, and magnifies the astonishing wonders of nature.', 444, 'TED2014', TIMESTAMP '2014-03-19 02:00:00', 'https://www.ted.com/talks/louie_schwartzberg_hidden_miracles_of_the_natural_world');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('Louie Schwartzberg');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('Louie Schwartzberg', 'Louie Schwartzberg: Hidden miracles of the natural world');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'Beautiful', 2341);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'Inspiring', 1139);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'Fascinating', 2591);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'Jaw-dropping', 704);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'Informative', 977);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'Ingenious', 201);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'Courageous', 52);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'Obnoxious', 15);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'Unconvincing', 35);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'Persuasive', 31);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'OK', 97);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'Funny', 20);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'Confusing', 9);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Louie Schwartzberg: Hidden miracles of the natural world', 'Longwinded', 30);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/david_sengeh_the_sore_problem_of_prosthetic_limbs', 742510);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'What drove David Sengeh to create a more comfortable prosthetic limb? He grew up in Sierra Leone, and too many of the people he loves are missing limbs after the brutal civil war there. When he noticed that people who had prosthetics weren’t actually wearing them, the TED Fellow set out to discover why — and to solve the problem with his team from the MIT Media Lab.', 283, 'TED2014', TIMESTAMP '2014-03-17 02:00:00', 'https://www.ted.com/talks/david_sengeh_the_sore_problem_of_prosthetic_limbs');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('David Sengeh');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('David Sengeh', 'David Sengeh: The sore problem of prosthetic limbs');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'Beautiful', 77);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'Courageous', 43);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'Informative', 157);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'Inspiring', 169);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'Funny', 13);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'Ingenious', 89);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'Fascinating', 57);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'OK', 33);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'Persuasive', 31);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'Longwinded', 3);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'Jaw-dropping', 6);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'Unconvincing', 1);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'Confusing', 3);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Sengeh: The sore problem of prosthetic limbs', 'Obnoxious', 0);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/gabby_giffords_and_mark_kelly_be_passionate_be_courageous_be_your_best', 1048304);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'On January 8, 2011, Congresswoman Gabby Giffords was shot in the head while meeting constituents in her home town of Tucson, Arizona. Her husband, the astronaut Mark Kelly, immediately flew to be by her side. In this emotional conversation with Pat Mitchell, the pair describe their lives both before and after the accident -- and describe their views on responsible gun ownership.', 1128, 'TED2014', TIMESTAMP '2014-03-21 02:00:00', 'https://www.ted.com/talks/gabby_giffords_and_mark_kelly_be_passionate_be_courageous_be_your_best');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('Gabby Giffords');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('Gabby Giffords', 'Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('Mark Kelly');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('Mark Kelly', 'Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'Beautiful', 220);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'Inspiring', 348);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'Unconvincing', 12);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'Obnoxious', 12);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'Courageous', 295);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'Funny', 9);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'Informative', 18);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'Persuasive', 22);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'Fascinating', 44);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'Longwinded', 17);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'Jaw-dropping', 16);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'OK', 24);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'Confusing', 7);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gabby Giffords and Mark Kelly: Be passionate. Be courageous. Be your best.', 'Ingenious', 1);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/david_brooks_should_you_live_for_your_resume_or_your_eulogy', 2306549);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'Within each of us are two selves, suggests David Brooks in this meditative short talk: the self who craves success, who builds a résumé, and the self who seeks connection, community, love -- the values that make for a great eulogy. (Joseph Soloveitchik has called these selves "Adam I" and "Adam II.") Brooks asks: Can we balance these two selves?', 301, 'TED2014', TIMESTAMP '2014-03-19 02:00:00', 'https://www.ted.com/talks/david_brooks_should_you_live_for_your_resume_or_your_eulogy');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('David Brooks');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('David Brooks', 'David Brooks: Should you live for your résumé ... or your eulogy?');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'Fascinating', 383);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'Longwinded', 50);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'OK', 311);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'Persuasive', 201);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'Unconvincing', 183);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'Inspiring', 829);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'Confusing', 59);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'Informative', 169);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'Beautiful', 356);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'Courageous', 121);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'Ingenious', 49);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'Obnoxious', 35);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'Funny', 9);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Brooks: Should you live for your résumé ... or your eulogy?', 'Jaw-dropping', 20);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/jennifer_senior_for_parents_happiness_is_a_very_high_bar', 1901605);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'The parenting section of the bookstore is overwhelming—it''s "a giant, candy-colored monument to our collective panic," as writer Jennifer Senior puts it. Why is parenthood filled with so much anxiety? Because the goal of modern, middle-class parents—to raise happy children—is so elusive. In this honest talk, she offers some kinder and more achievable aims.', 1091, 'TED2014', TIMESTAMP '2014-03-21 02:00:00', 'https://www.ted.com/talks/jennifer_senior_for_parents_happiness_is_a_very_high_bar');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('Jennifer Senior');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('Jennifer Senior', 'Jennifer Senior: For parents, happiness is a very high bar');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'Longwinded', 135);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'Unconvincing', 97);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'Obnoxious', 50);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'Inspiring', 610);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'Fascinating', 192);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'Courageous', 179);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'Jaw-dropping', 15);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'Beautiful', 214);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'Persuasive', 276);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'Ingenious', 62);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'OK', 245);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'Informative', 297);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'Funny', 104);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jennifer Senior: For parents, happiness is a very high bar', 'Confusing', 29);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/jeremy_kasdin_the_flower_shaped_starshade_that_might_help_us_detect_earth_like_planets', 1276015);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'Astronomers believe that every star in the galaxy has a planet, one fifth of which might harbor life. Only we haven''t seen any of them -- yet. Jeremy Kasdin and his team are looking to change that with the design and engineering of an extraordinary piece of equipment: a flower petal-shaped "starshade" positioned 50,000 km from a telescope to enable imaging of planets about distant stars. It is, he says, the "coolest possible science."', 398, 'TED2014', TIMESTAMP '2014-03-19 02:00:00', 'https://www.ted.com/talks/jeremy_kasdin_the_flower_shaped_starshade_that_might_help_us_detect_earth_like_planets');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('Jeremy Kasdin');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('Jeremy Kasdin', 'Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'Inspiring', 259);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'Jaw-dropping', 94);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'Informative', 333);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'Persuasive', 37);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'Fascinating', 356);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'Ingenious', 235);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'Beautiful', 45);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'Funny', 8);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'OK', 61);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'Courageous', 10);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'Unconvincing', 14);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'Longwinded', 8);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'Confusing', 2);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Jeremy Kasdin: The flower-shaped starshade that might help us detect Earth-like planets', 'Obnoxious', 6);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/matthew_carter_my_life_in_typefaces', 1112914);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('Matthew Carter: My life in typefaces', 'Pick up a book, magazine or screen, and more than likely you''ll come across some typography designed by Matthew Carter. In this charming talk, the man behind typefaces such as Verdana, Georgia and Bell Centennial (designed just for phone books -- remember them?), takes us on a spin through a career focused on the very last pixel of each letter of a font.', 961, 'TED2014', TIMESTAMP '2014-03-18 02:00:00', 'https://www.ted.com/talks/matthew_carter_my_life_in_typefaces');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('Matthew Carter');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('Matthew Carter', 'Matthew Carter: My life in typefaces');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Matthew Carter: My life in typefaces', 'Informative', 376);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Matthew Carter: My life in typefaces', 'Longwinded', 56);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Matthew Carter: My life in typefaces', 'OK', 123);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Matthew Carter: My life in typefaces', 'Confusing', 15);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Matthew Carter: My life in typefaces', 'Ingenious', 60);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Matthew Carter: My life in typefaces', 'Inspiring', 84);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Matthew Carter: My life in typefaces', 'Funny', 21);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Matthew Carter: My life in typefaces', 'Fascinating', 138);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Matthew Carter: My life in typefaces', 'Beautiful', 59);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Matthew Carter: My life in typefaces', 'Unconvincing', 19);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Matthew Carter: My life in typefaces', 'Courageous', 9);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Matthew Carter: My life in typefaces', 'Persuasive', 8);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Matthew Carter: My life in typefaces', 'Obnoxious', 8);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Matthew Carter: My life in typefaces', 'Jaw-dropping', 5);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/sarah_lewis_embrace_the_near_win', 2293317);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('Sarah Lewis: Embrace the near win', 'At her first museum job, art historian Sarah Lewis noticed something important about an artist she was studying: Not every artwork was a total masterpiece. She asks us to consider the role of the almost-failure, the near win, in our own lives. In our pursuit of success and mastery, is it actually our near wins that push us forward?', 701, 'TED2014', TIMESTAMP '2014-03-20 02:00:00', 'https://www.ted.com/talks/sarah_lewis_embrace_the_near_win');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('Sarah Lewis');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('Sarah Lewis', 'Sarah Lewis: Embrace the near win');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Sarah Lewis: Embrace the near win', 'Confusing', 27);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Sarah Lewis: Embrace the near win', 'Unconvincing', 22);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Sarah Lewis: Embrace the near win', 'OK', 166);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Sarah Lewis: Embrace the near win', 'Inspiring', 637);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Sarah Lewis: Embrace the near win', 'Fascinating', 187);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Sarah Lewis: Embrace the near win', 'Persuasive', 161);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Sarah Lewis: Embrace the near win', 'Obnoxious', 16);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Sarah Lewis: Embrace the near win', 'Beautiful', 196);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Sarah Lewis: Embrace the near win', 'Informative', 167);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Sarah Lewis: Embrace the near win', 'Courageous', 64);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Sarah Lewis: Embrace the near win', 'Jaw-dropping', 18);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Sarah Lewis: Embrace the near win', 'Funny', 8);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Sarah Lewis: Embrace the near win', 'Longwinded', 75);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Sarah Lewis: Embrace the near win', 'Ingenious', 49);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/michel_laberge_how_synchronized_hammer_strikes_could_generate_nuclear_fusion', 1038727);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'Our energy future depends on nuclear fusion, says Michel Laberge. The plasma physicist runs a small company with a big idea for a new type of nuclear reactor that could produce clean, cheap energy. His secret recipe? High speeds, scorching temperatures and crushing pressure. In this hopeful talk, he explains how nuclear fusion might be just around the corner.', 770, 'TED2014', TIMESTAMP '2014-03-20 02:00:00', 'https://www.ted.com/talks/michel_laberge_how_synchronized_hammer_strikes_could_generate_nuclear_fusion');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('Michel Laberge');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('Michel Laberge', 'Michel Laberge: How synchronized hammer strikes could generate nuclear fusion');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'Beautiful', 57);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'Ingenious', 291);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'Inspiring', 222);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'Fascinating', 228);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'Informative', 373);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'Persuasive', 75);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'Confusing', 8);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'Unconvincing', 22);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'Funny', 19);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'Jaw-dropping', 38);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'OK', 34);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'Courageous', 41);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'Longwinded', 19);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Michel Laberge: How synchronized hammer strikes could generate nuclear fusion', 'Obnoxious', 6);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/elizabeth_gilbert_success_failure_and_the_drive_to_keep_creating', 3643938);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'Elizabeth Gilbert was once an "unpublished diner waitress," devastated by rejection letters. And yet, in the wake of the success of ''Eat, Pray, Love,'' she found herself identifying strongly with her former self. With beautiful insight, Gilbert reflects on why success can be as disorienting as failure and offers a simple -- though hard -- way to carry on, regardless of outcomes.', 438, 'TED2014', TIMESTAMP '2014-03-19 02:00:00', 'https://www.ted.com/talks/elizabeth_gilbert_success_failure_and_the_drive_to_keep_creating');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('Elizabeth Gilbert');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('Elizabeth Gilbert', 'Elizabeth Gilbert: Success, failure and the drive to keep creating');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'Inspiring', 2957);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'Beautiful', 893);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'Courageous', 616);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'Fascinating', 311);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'Funny', 165);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'Informative', 251);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'Persuasive', 408);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'Ingenious', 77);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'OK', 232);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'Unconvincing', 60);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'Longwinded', 47);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'Confusing', 11);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'Jaw-dropping', 35);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Elizabeth Gilbert: Success, failure and the drive to keep creating', 'Obnoxious', 17);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/wendy_chung_autism_what_we_know_and_what_we_don_t_know_yet', 2305547);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'In this factual talk, geneticist Wendy Chung shares what we know about autism spectrum disorder — for example, that autism has multiple, perhaps interlocking, causes. Looking beyond the worry and concern that can surround a diagnosis, Chung and her team look at what we''ve learned through studies, treatments and careful listening.', 935, 'TED2014', TIMESTAMP '2014-03-20 02:00:00', 'https://www.ted.com/talks/wendy_chung_autism_what_we_know_and_what_we_don_t_know_yet');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('Wendy Chung');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('Wendy Chung', 'Wendy Chung: Autism — what we know (and what we don''t know yet)');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'Informative', 1038);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'Fascinating', 358);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'Unconvincing', 113);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'Obnoxious', 39);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'Inspiring', 233);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'Longwinded', 26);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'Persuasive', 203);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'Courageous', 29);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'OK', 106);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'Beautiful', 58);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'Ingenious', 38);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'Confusing', 14);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'Jaw-dropping', 12);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Wendy Chung: Autism — what we know (and what we don''t know yet)', 'Funny', 12);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/david_epstein_are_athletes_really_getting_faster_better_stronger', 2824676);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'When you look at sporting achievements over the last decades, it seems like humans have gotten faster, better and stronger in nearly every way. Yet as David Epstein points out in this delightfully counter-intuitive talk, we might want to lay off the self-congratulation. Many factors are at play in shattering athletic records, and the development of our natural talents is just one of them.', 893, 'TED2014', TIMESTAMP '2014-03-20 02:00:00', 'https://www.ted.com/talks/david_epstein_are_athletes_really_getting_faster_better_stronger');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('David Epstein');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('David Epstein', 'David Epstein: Are athletes really getting faster, better, stronger?');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'Informative', 1435);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'Fascinating', 1387);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'Jaw-dropping', 211);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'OK', 109);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'Ingenious', 217);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'Inspiring', 403);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'Persuasive', 293);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'Beautiful', 44);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'Funny', 116);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'Unconvincing', 35);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'Courageous', 61);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'Longwinded', 24);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'Confusing', 3);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('David Epstein: Are athletes really getting faster, better, stronger?', 'Obnoxious', 17);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/andrew_bastawrous_get_your_next_eye_exam_on_a_smartphone', 1051614);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'Thirty-nine million people in the world are blind, and the majority lost their sight due to curable and preventable diseases. But how do you test and treat people who live in remote areas, where expensive, bulky eye equipment is hard to come by? TED Fellow Andrew Bastawrous demos a smartphone app and cheap hardware that might help.', 393, 'TED2014', TIMESTAMP '2014-03-17 02:00:00', 'https://www.ted.com/talks/andrew_bastawrous_get_your_next_eye_exam_on_a_smartphone');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('Andrew Bastawrous');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('Andrew Bastawrous', 'Andrew Bastawrous: Get your next eye exam on a smartphone');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'Ingenious', 355);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'Inspiring', 373);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'Informative', 244);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'Jaw-dropping', 94);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'Fascinating', 201);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'Beautiful', 56);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'Courageous', 71);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'Persuasive', 48);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'Funny', 22);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'OK', 33);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'Obnoxious', 4);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'Longwinded', 2);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'Confusing', 7);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Andrew Bastawrous: Get your next eye exam on a smartphone', 'Unconvincing', 3);
-
-END;
-/
------------------------------------------------------------------------------
-BEGIN
-    INSERT INTO TEDEvent (event) VALUES ('TED2014');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO Video (url, views) VALUES ('https://www.ted.com/talks/gavin_schmidt_the_emergent_patterns_of_climate_change', 1150409);
-    INSERT INTO TEDTalk (speech_name, description, duration_sec, event, film_date, url)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'You can''t understand climate change in pieces, says climate scientist Gavin Schmidt. It''s the whole, or it''s nothing. In this illuminating talk, he explains how he studies the big picture of climate change with mesmerizing models that illustrate the endlessly complex interactions of small-scale environmental events.', 730, 'TED2014', TIMESTAMP '2014-03-12 02:00:00', 'https://www.ted.com/talks/gavin_schmidt_the_emergent_patterns_of_climate_change');
-END;
-/
-BEGIN
-    INSERT INTO Person (person_name) VALUES ('Gavin Schmidt');
-EXCEPTION
-    WHEN DUP_VAL_ON_INDEX THEN NULL;
-END;
-/
-BEGIN
-    INSERT INTO SpeechPerson (person_name, speech_name)
-        VALUES ('Gavin Schmidt', 'Gavin Schmidt: The emergent patterns of climate change');
-END;
-/
-BEGIN
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'Informative', 510);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'Ingenious', 46);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'Fascinating', 194);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'Beautiful', 59);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'Courageous', 31);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'Inspiring', 113);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'Persuasive', 244);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'OK', 59);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'Unconvincing', 16);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'Longwinded', 24);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'Obnoxious', 17);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'Funny', 1);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'Jaw-dropping', 27);
-
-    INSERT INTO SpeechRating (speech_name, rating_name, rating_value)
-        VALUES ('Gavin Schmidt: The emergent patterns of climate change', 'Confusing', 19);
 
 END;
 /
